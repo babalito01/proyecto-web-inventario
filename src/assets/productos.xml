@@ -12,7 +12,7 @@
         <nombre>Smartphone</nombre>
         <precio>800</precio>
         <cantidad>15</cantidad>
-        <imagen>assets/smartphone.jpg</imagen>
+        <imagen>assets/telefono.jpg</imagen>
     </producto>
     <producto>
         <id>3</id>

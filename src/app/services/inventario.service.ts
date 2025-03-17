@@ -85,11 +85,11 @@ export class InventarioService {
 
   private actualizarXML(): void {
     // Simular la actualización del XML generando un nuevo XML a partir del arreglo en memoria
-    const xmlString = this.generarXMLDesdeProductos(this.productos);
+    const xmlString = this.generarXML(this.productos);
     console.log('XML actualizado:', xmlString);
   }
 
-  private generarXMLDesdeProductos(productos: Producto[]): string {
+  private generarXML(productos: Producto[]): string {
     const xmlHeader = '<?xml version="1.0" encoding="UTF-8"?>';
     const productosXML = productos.map(prod => `
       <producto>
@@ -104,7 +104,7 @@ export class InventarioService {
   }
   
   descargarXML(): void {
-    const xmlString = this.generarXMLDesdeProductos(this.productos);
+    const xmlString = this.generarXML(this.productos);
     const blob = new Blob([xmlString], { type: 'application/xml' });
     const url = window.URL.createObjectURL(blob);
   
