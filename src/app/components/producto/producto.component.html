@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <h2>Catálogo de Productos</h2>
+<button (click)="irAlCarrito()">Ir al Carrito</button><br>
+<button (click)="irAlInventario()">Ir al Inventario</button><br>
 <div class="productos">
     <div *ngFor="let producto of productos" class="producto">
         <img [src]="producto.imagen" alt="">
@@ -8,5 +10,3 @@
         <button (click)="agregarAlCarrito(producto)">Agregar al carrito</button>
     </div>
 </div>
-<button (click)="irAlCarrito()">Ir al Carrito</button><br>
-<button (click)="irAlInventario()">Ir al Inventario</button>

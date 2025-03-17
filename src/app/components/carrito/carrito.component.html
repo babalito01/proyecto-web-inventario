@@ -1,4 +1,5 @@
 <h2>Carrito de Compras</h2>
+<button (click)="irAlCatalogo()">Ir al Catalogo</button><br>
 <div *ngIf="carrito.length > 0">
     <ul>
         <li *ngFor="let producto of carrito; let i = index">
